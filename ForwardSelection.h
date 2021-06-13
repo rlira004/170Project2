@@ -59,7 +59,6 @@ public:
 				}
 			
 			output.push_back(position[pos]);
-			imTired++;
 				for (int i = 0; i < num_of_features; i++) {
 				/* generate secret number between 1 and 10: */
 				randomNums.pop_back();
@@ -71,6 +70,8 @@ public:
 				randomNums.push_back(ranNum/10);
 				}
 					cout << output[imTired] << " " << temp << endl;
+					imTired++;
+
 
 			}
 		}
