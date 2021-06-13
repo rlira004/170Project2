@@ -19,6 +19,7 @@ public:
 		num_of_features = num;
 	}
 	void ForwardSelect() {
+		bool proceedSearching = false;
 		double noFeatures = rand() % 1000 + 1;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatures/10 << "%" << endl;
 		cout << "Beginning search." << endl << endl;
@@ -29,9 +30,11 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
+			if(randomNums(i) > noFeatures)
+				proceedSearching = true;
 		}
 		while(!randomNums.empty()){
-		cout << "check" << endl;
+		cout << proceedSearching << endl;
 		randomNums.pop_back();
 		}
 
