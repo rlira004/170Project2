@@ -55,10 +55,10 @@ public:
 						temp = randomNums[j];
 						pos = j;
 					}
+					randomNums.erase(randomNums.begin()+pos);
 					for(int k = 0; k < randomNums.size(); k++){
 						cout << "* "<< randomNums[k] << endl;
 					}
-					randomNums.erase(randomNums.begin()+pos);
 				}
 
 			//}
