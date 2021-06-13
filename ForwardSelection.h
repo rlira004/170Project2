@@ -49,7 +49,7 @@ public:
 		}
 		else{
 			temp = 0;
-			for(int x = 0; x < randomNums.size(); x++){
+			for(int x = 0; x <= randomNums.size(); x++){
 				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
