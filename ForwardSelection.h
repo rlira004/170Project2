@@ -59,7 +59,7 @@ public:
 					output.push_back(j);
 				}
 					randomNums.erase(randomNums.begin()+pos);
-					position.erase(position.begin()+pos);
+					//position.erase(position.begin()+pos);
 					//for(int k = 0; k <= randomNums.size(); k++){
 						//cout << position[k] << ") " << randomNums[k] << endl;
 					//}
