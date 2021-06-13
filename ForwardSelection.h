@@ -62,6 +62,11 @@ public:
 			cout << output[imTired] << " " << temp << endl;
 			imTired++;
 			num_of_features--;
+				for (int i = 0; i < num_of_features; i++) {
+				/* generate secret number between 1 and 10: */
+				ranNum = rand() % 1000 + 1;
+				randomNums.push_back(ranNum/10);
+				}
 			}
 		}
 	}
