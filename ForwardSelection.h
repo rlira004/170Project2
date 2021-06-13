@@ -72,7 +72,7 @@ public:
 				randomNums.push_back(ranNum/10);
 					cout << "Using features(s) (Nummies) { " << output[imTired] << ", " << x << "} accuracy is " << randomNums[x] << endl;
 				}
-					cout << endl << " << output[imTired] << " was best, accuracy is " << temp << endl;
+					cout << endl << output[imTired] << " was best, accuracy is " << temp << endl;
 					imTired++;
 
 
