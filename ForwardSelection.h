@@ -32,6 +32,7 @@ public:
 			randomNums.push_back(ranNum/10);
 		}
 		for(int j = 0; j < num_of_features; j++){
+			cout << randomNums[j] << endl;
 			if(noFeatures < randomNums[j])
 				cout << "bullshit" << endl;
 			else
