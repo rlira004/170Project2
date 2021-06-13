@@ -34,8 +34,9 @@ public:
 		}
 		for(int j = 0; j < num_of_features; j++){
 			cout << randomNums[j] << endl;
-			if(noFeatureReduced < randomNums[j])
-				cout << "bullshit" << endl;
+			if(randomNums[j] > noFeatureReduced)
+				proceedSearching = true;
+				cout << proceedSearching << endl;
 			else
 				cout << "fuck" << endl;
 		}
