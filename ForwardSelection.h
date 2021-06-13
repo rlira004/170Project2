@@ -63,8 +63,8 @@ public:
 				cout <<"3 "<< randomNums[2] << endl;
 				cout <<"4 "<< randomNums[3] << endl;
 			output.push_back(position[pos]);
-			cout << output[imTired] << " " << temp << endl;
-			imTired++;
+			//cout << output[imTired] << " " << temp << endl;
+			//imTired++;
 			
 			}
 		}
