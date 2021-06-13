@@ -53,8 +53,6 @@ public:
 		//Do the search
 		else{
 			temp = randomNums[0];
-			//While loop does the comparisons and holds the values
-			while(!randomNums.empty()){
 				//for loop gets the values
 				for(int j = 0; j <= randomNums.size()-1; j++){
 					if(randomNums[j] > temp){
@@ -67,7 +65,6 @@ public:
 					randomNums.erase(randomNums.begin() + pos);
 					position.erase(position.begin() + pos);
 				}
-				cout << "While Loop" << endl;
 			}
 		}
 
