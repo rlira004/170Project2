@@ -63,9 +63,9 @@ public:
 					pos = j;
 					}
 					cout << "Accuracy is best with " << position[pos] << " " << randomNums[j] << endl;
-					randomNums.erase(randomNums.begin() + pos-1);
+					randomNums.erase(randomNums.begin() + pos);
 					output.push_back(position[pos]);
-					position.erase(position.begin() +pos-1);
+					position.erase(position.begin() + pos);
 				}
 			}
 		}
