@@ -59,8 +59,9 @@ public:
 				}
 					//accuracy = temp;
 					//output.push_back(pos+1);
-					if(randomNums.size() >= 1)
+					if(randomNums.size() >= 2){
 					randomNums.erase(randomNums.begin()+pos);
+					}
 					//for(int k = 0; k <= randomNums.size(); k++){
 						//cout << position[k] << ") " << randomNums[k] << endl;
 					//}
