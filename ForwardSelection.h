@@ -59,10 +59,10 @@ public:
 				for(int j = 1; j <= randomNums.size(); j++){
 					if(randomNums[j] > temp){
 					temp = randomNums[j];
-					acc = temp;
+					accuracy = temp;
 					pos = j;
 					}
-					cout << "Accuracy is best with " << position[pos] << " " << randonNums[j] << endl;
+					cout << "Accuracy is best with " << position[pos] << " " << randomNums[j] << endl;
 					randomNums.erase(randomNums[pos]);
 					output.push_back(position[pos]);
 					position.erase(position[pos]);
