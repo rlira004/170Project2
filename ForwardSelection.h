@@ -60,7 +60,7 @@ public:
 				}
 			
 			output.push_back(position[pos]);
-				cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << endl << endl; //testing
+				cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				for (int w = 0; w < num_of_features; w++) {
 				/* generate secret number between 1 and 10: */
 				randomNums.pop_back();
@@ -70,9 +70,10 @@ public:
 				/* generate secret number between 1 and 10: */
 				ranNum = rand() % 1000 + 1;
 				randomNums.push_back(ranNum/10);
-					cout << "Using features(s) (Nummies) { " << output[imTired] << ", " << x << "} accuracy is " << randomNums[x] << endl;
+					//nummies
+					cout << "Using features(s) {" << output[imTired] << ", " << x << "} accuracy is " << randomNums[x] << endl;
 				}
-					cout << endl << output[imTired] << " was best, accuracy is " << temp << endl;
+					cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
 					imTired++;
 
 
