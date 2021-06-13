@@ -59,8 +59,8 @@ public:
 				}
 			
 			output.push_back(position[pos]);
-			//cout << output[imTired] << " " << temp << endl;
-			//imTired++;
+			cout << output[imTired] << " " << temp << endl;
+			imTired++;
 			num_of_features--;
 			}
 		}
