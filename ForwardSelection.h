@@ -48,11 +48,12 @@ public:
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			while(!randomNums.empty()){
-				randomNums.erase(randomNums.begin());
-				for(int j = 0; j < randomNums.size(); j++){
-					cout << randomNums[j] << endl;
+			temp = 0;
+			for(int j = 0; j < randomNums.size(); j++){
+				if(randomNums[j]>temp){
+					temp = randomNums[j];
 				}
+				cout << temp << endl;
 			}
 		}
 	}
