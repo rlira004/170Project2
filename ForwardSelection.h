@@ -62,7 +62,6 @@ public:
 					for(int k = 0; k < randomNums.size(); k++){
 						cout << position[k] << ") " << randomNums[k] << endl;
 					}
-				cout << endl;
 			}
 		}
 	}
