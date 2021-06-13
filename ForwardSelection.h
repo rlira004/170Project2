@@ -33,6 +33,7 @@ public:
 			cout << randomNums[i] << endl;
 			if(randomNums[i] > noFeatures){
 				proceedSearching = true;
+				cout << proceedSearching << endl;
 			}
 		}
 		while(!randomNums.empty()){
