@@ -73,7 +73,7 @@ public:
 					//nummies
 					cout << "Using features(s) {" << output[imTired] << ", " << x << "} accuracy is " << randomNums[x] << endl;
 				}
-					cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
+					//cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
 					imTired++;
 
 
