@@ -30,8 +30,8 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
-			cout << randomNums[i] << endl;
-			if(randomNums[i] > noFeatures){
+			cout << randomNums.at(i) << endl;
+			if(randomNums.at(i) > noFeatures){
 				proceedSearching = true;
 				cout << proceedSearching << endl;
 			}
