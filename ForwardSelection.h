@@ -57,15 +57,11 @@ public:
 						pos = j;
 					}
 				}
-			randomNums.pop_back();
+			randomNums.erase(randomNums.begin()+pos);
 			output.push_back(position[pos]);
 			cout << output[imTired] << " " << temp << endl;
 			imTired++;
-				for (int x = 0; x <= randomNums.size(); x++) {
-				/* generate secret number between 1 and 10: */
-				ranNum = rand() % 1000 + 1;
-				randomNums.push_back(ranNum/10);
-				}
+			
 			}
 		}
 	}
