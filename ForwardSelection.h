@@ -21,7 +21,8 @@ public:
 	void ForwardSelect() {
 		bool proceedSearching;
 		double noFeatures = rand() % 1000 + 1;
-		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatures/10 << "%" << endl;
+		double noFeatureReduced = noFeatures/10;
+		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatureReduced << "%" << endl;
 		cout << "Beginning search." << endl << endl;
 		/* initialize random seed: */
 		srand(time(NULL));
@@ -33,7 +34,7 @@ public:
 		}
 		for(int j = 0; j < num_of_features; j++){
 			cout << randomNums[j] << endl;
-			if(noFeatures < randomNums[j])
+			if(noFeatureReduced < randomNums[j])
 				cout << "bullshit" << endl;
 			else
 				cout << "fuck" << endl;
