@@ -56,7 +56,7 @@ public:
 			//While loop does the comparisons and holds the values
 			while(!randomNums.empty()){
 				//for loop gets the values
-				for(int j = 1; j <= randomNums.size()-1; j++){
+				for(int j = 0; j <= randomNums.size()-1; j++){
 					if(randomNums[j] > temp){
 					temp = randomNums[j];
 					accuracy = temp;
