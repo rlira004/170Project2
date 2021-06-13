@@ -31,7 +31,7 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
-			if(randomNums[j] > noFeatureReduced){
+			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
 			}
 
