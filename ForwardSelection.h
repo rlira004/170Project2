@@ -63,10 +63,8 @@ public:
 					pos = j;
 					}
 					cout << "Acc " << temp << " Pos"<< j << endl;
-					/*cout << "Accuracy is best with " << position[pos] << " " << randomNums[j] << endl;
 					randomNums.erase(randomNums.begin() + pos);
-					output.push_back(position[pos]);
-					position.erase(position.begin() + pos);*/
+					position.erase(position.begin() + pos);
 				}
 			}
 		}
