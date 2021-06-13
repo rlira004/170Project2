@@ -9,6 +9,7 @@ using namespace std;
 
 class ForwardSelection {
 private:
+	double noFeatures;
 	int num_of_features;
 	vector<double> position;
 	vector<double> accuracy;
@@ -18,6 +19,9 @@ public:
 		num_of_features = num;
 	}
 	void ForwardSelect() {
+		double noFeatures = rand() % 1000 + 1;
+		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatures/10 << "%" << endl;
+		cout << "Beginning search." << endl << endl;
 		/* initialize random seed: */
 		srand(time(NULL));
 		double ranNum;
