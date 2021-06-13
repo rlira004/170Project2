@@ -52,8 +52,13 @@ public:
 			for(int j = 0; j < randomNums.size(); j++){
 				if(randomNums[j]>temp){
 					temp = randomNums[j];
+					pos = j;
 				}
-				cout << temp << endl;
+				accuracy = temp;
+				randomNums.erase(randomNums.begin()+pos)
+					for(int k = 0; k < randomNums.size(); k++{
+						cout << "?? " << randomNums[k] << endl;
+					}
 			}
 		}
 	}
