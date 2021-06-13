@@ -19,7 +19,7 @@ public:
 		num_of_features = num;
 	}
 	void ForwardSelect() {
-		bool proceedSearching = false;
+		bool proceedSearching;
 		double noFeatures = rand() % 1000 + 1;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatures/10 << "%" << endl;
 		cout << "Beginning search." << endl << endl;
