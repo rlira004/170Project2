@@ -41,7 +41,8 @@ public:
 			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
 			}
-			cout << position[i] << ") " << randomNums[i] << endl;
+			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
+			//cout << position[i] << ") " << randomNums[i] << endl;
 
 		}
 		//if No Features = best, then crap out
@@ -59,6 +60,7 @@ public:
 				}
 			
 			output.push_back(position[pos]);
+				cout << "Feature set " << output[imTired] << " was best, accuracy is " << temp << endl; //testing
 				for (int w = 0; w < num_of_features; w++) {
 				/* generate secret number between 1 and 10: */
 				randomNums.pop_back();
