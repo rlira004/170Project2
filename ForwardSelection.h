@@ -57,7 +57,7 @@ public:
 						pos = j;
 					}
 				}
-			randomNums.pop_back();
+			randomNums.erase(randomNums.begin());
 			output.push_back(position[pos]);
 			cout << output[imTired] << " " << temp << endl;
 			imTired++;
