@@ -22,6 +22,7 @@ public:
 		bool proceedSearching;
 		double noFeatures = rand() % 1000 + 1;
 		double noFeatureReduced = noFeatures/10;
+		double temp;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatureReduced << "%" << endl;
 		cout << "Beginning search." << endl << endl;
 		/* initialize random seed: */
@@ -42,7 +43,8 @@ public:
 		}
 		else{
 			while(!randomNums.empty()){
-			cout << proceedSearching << endl;
+			temp = randomNums[0];
+			if(tem
 			randomNums.pop_back();
 			}
 		}
