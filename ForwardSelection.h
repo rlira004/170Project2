@@ -50,6 +50,7 @@ public:
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
+	}
 };
 
 
