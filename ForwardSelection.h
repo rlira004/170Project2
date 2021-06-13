@@ -50,14 +50,6 @@ public:
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
-		//Do the search
-		else{
-			temp = randomNums[0];
-				//for loop gets the values
-				for(int j = 1; j <= randomNums.size(); j++){
-					
-				}
-		}
 };
 
 
