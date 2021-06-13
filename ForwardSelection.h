@@ -50,7 +50,7 @@ public:
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			temp = accuracy
+			temp = accuracy;
 			//temp = 0;
 			while(num_of_features != 0){
 				for(int j = 0; j < num_of_features; j++){
