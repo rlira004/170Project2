@@ -66,7 +66,7 @@ public:
 			}
 			
 			cout << accuracy << endl;
-			for(int x = 0; x < num_of_feats; x++){
+			for(int x = 0; x < num_of_features; x++){
 				cout << output[x] << endl;
 			}
 		}
