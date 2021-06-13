@@ -56,7 +56,7 @@ public:
 						pos = j;
 					}
 				}
-					accuracy = temp;
+					//accuracy = temp;
 					//output.push_back(pos+1);
 					randomNums.erase(randomNums.begin()+pos);
 					position.erase(position.begin()+pos);
@@ -65,7 +65,7 @@ public:
 					//}
 			}
 			
-			cout << accuracy << endl;
+			//cout << accuracy << endl;
 			//for(int x = 0; x < output.size(); x++){
 				//cout << output[x] << endl;
 			//}
