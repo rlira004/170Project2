@@ -51,7 +51,7 @@ public:
 		else{
 			temp = 0;
 			while(num_of_features != 0){
-				for(int j = 0; j < num_of_features(); j++){
+				for(int j = 0; j < num_of_features; j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
 						pos = j;
