@@ -50,22 +50,18 @@ public:
 		}
 		else{
 			temp = 0;
-			while(!randomNums.empty()){
-				for(int j = 0; j < randomNums.size(); j++){
+			while(num_of_features != 0){
+				for(int j = 0; j < num_of_features(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
 						pos = j;
 					}
 				}
-			randomNums.erase(randomNums.begin());
-				cout <<"1 "<< randomNums[0] << endl;
-				cout <<"2 "<< randomNums[1] << endl;
-				cout <<"3 "<< randomNums[2] << endl;
-				cout <<"4 "<< randomNums[3] << endl;
+			
 			output.push_back(position[pos]);
 			//cout << output[imTired] << " " << temp << endl;
 			//imTired++;
-			
+			num_of_features--;
 			}
 		}
 	}
