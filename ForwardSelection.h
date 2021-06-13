@@ -48,7 +48,7 @@ public:
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			for(int j = 0; J < RandomNums.size(); j++){
+			for(int j = 0; j < RandomNums.size(); j++){
 				cout << RandomNums[j] << "LOOPS" << endl;
 			}
 		}
