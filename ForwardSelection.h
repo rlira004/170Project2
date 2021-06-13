@@ -49,7 +49,7 @@ public:
 		}
 		else{
 			temp = 0;
-			while(randomNums.size() >=2){
+			while(randomNums.size() > 0){
 				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
