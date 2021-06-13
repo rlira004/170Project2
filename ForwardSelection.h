@@ -54,8 +54,8 @@ public:
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
 						pos = j;
-						cout << j << endl;
 					}
+				cout << j << endl;
 				}
 					//accuracy = temp;
 					//output.push_back(pos+1);
