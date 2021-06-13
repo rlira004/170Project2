@@ -54,14 +54,14 @@ public:
 		else{
 			temp = randomNums[0];
 				//for loop gets the values
-				for(int j = 0; j <= randomNums.size(); j++){
+				for(int j = 1; j <= randomNums.size(); j++){
 					if(randomNums[j] > temp){
 					temp = randomNums[j];
 					accuracy = temp;
-					pos = j-1;
+					pos = j;
 					cout << "for loop" << endl;
 					}
-					cout << "Acc " << temp << " Pos"<< j << endl;
+					cout << "Acc " << temp << " Pos"<< pos << endl;
 					randomNums.erase(randomNums.begin() + pos);
 					position.erase(position.begin() + pos);
 				}
