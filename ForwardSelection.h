@@ -31,8 +31,8 @@ public:
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 		}
-		for(i=0; i< num_of_features; i++){
-			if(noFeatures < randomNums[i])
+		for(int j = 0; j < num_of_features; j++){
+			if(noFeatures < randomNums[j])
 				cout << "bullshit" << endl;
 			else
 				cout << "fuck" << endl;
