@@ -55,7 +55,7 @@ public:
 						output[0]=position[j];
 					}
 			}
-			randomNums.pop_back();
+			//randomNums.pop_back();
 			cout << output[0] << " " << temp << endl;
 		}
 	}
