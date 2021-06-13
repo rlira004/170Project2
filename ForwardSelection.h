@@ -54,6 +54,7 @@ public:
 						temp = randomNums[j];
 					}
 			}
+		cout << temp << endl;
 		}
 	}
 };
