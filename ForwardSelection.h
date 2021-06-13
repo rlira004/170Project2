@@ -37,7 +37,7 @@ public:
 			cout << i << ") " << randomNums[i] << endl;
 
 		}
-		if(proceedSearching = false){
+		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
