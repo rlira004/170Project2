@@ -55,13 +55,19 @@ public:
 						temp = randomNums[j];
 						pos = j;
 					}
-					
+					accuracy = temp;
+					output.push_back(j);
 				}
 					randomNums.erase(randomNums.begin()+pos);
 					position.erase(position.begin()+pos);
 					for(int k = 0; k <= randomNums.size(); k++){
 						cout << position[k] << ") " << randomNums[k] << endl;
 					}
+			}
+			
+			cout << accuracy << endl;
+			for(int x = 0; x < num_of_feats; x++){
+				cout << output[x] << endl;
 			}
 		}
 	}
