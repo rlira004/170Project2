@@ -49,7 +49,7 @@ public:
 		}
 		else{
 			temp = 0;
-			while(!randomNums.empty()){
+			while(randomNums.size() >=2){
 				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
@@ -59,9 +59,7 @@ public:
 				}
 					//accuracy = temp;
 					//output.push_back(pos+1);
-					if(randomNums.size() >= 2){
 					randomNums.erase(randomNums.begin()+pos);
-					}
 					//for(int k = 0; k <= randomNums.size(); k++){
 						//cout << position[k] << ") " << randomNums[k] << endl;
 					//}
