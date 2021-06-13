@@ -43,7 +43,7 @@ public:
 			}
 			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
 			//cout << position[i] << ") " << randomNums[i] << endl;
-			accuracy = randomNums[i]//testing
+			accuracy = randomNums[i];//testing
 		}
 		//if No Features = best, then crap out
 		if(proceedSearching == false){
