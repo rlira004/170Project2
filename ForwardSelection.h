@@ -36,6 +36,7 @@ public:
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 			position.push_back(i+1);
+			cout << "**** " << position[i] << endl;
 			//checking to make sure NoFeatures isn't the best option
 			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
