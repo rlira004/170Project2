@@ -12,8 +12,9 @@ private:
 	double noFeatures;
 	int num_of_features;
 	vector<double> position;
-	vector<double> accuracy;
+	vector<double> output;
 	vector<double> randomNums;
+	double accuracy;
 public:
 	void get_feats(int num) {
 		num_of_features = num;
@@ -34,19 +35,23 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
+			position.push_back(i+1);
 			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
 			}
-			cout << i << ") " << randomNums[i] << endl;
+			cout << position[i] << ") " << randomNums[i] << endl;
 
 		}
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			while(!randomNums.empty()){
+			/*while(!randomNums.empty()){
+				for(int j = 0; j < num_of_features; j++){
+					
+				}
 				randomNums.pop_back();
-			}
+			}*/
 		}
 
 	}
