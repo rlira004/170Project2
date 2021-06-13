@@ -54,7 +54,7 @@ public:
 		else{
 			temp = randomNums[0];
 				//for loop gets the values
-				for(int j = 0; j <= randomNums.size()-1; j++){
+				for(int j = 0; j <= randomNums.size(); j++){
 					if(randomNums[j] > temp){
 					temp = randomNums[j];
 					accuracy = temp;
