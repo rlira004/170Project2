@@ -43,14 +43,15 @@ public:
 			}
 			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
 			//cout << position[i] << ") " << randomNums[i] << endl;
-
+			accuracy = randomNums[i]//testing
 		}
 		//if No Features = best, then crap out
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			temp = 0;
+			temp = accuracy
+			//temp = 0;
 			while(num_of_features != 0){
 				for(int j = 0; j < num_of_features; j++){
 					if(randomNums[j]>temp){
@@ -60,23 +61,23 @@ public:
 				}
 			
 			output.push_back(position[pos]);
-				cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl; //testing
+				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
+				//if(){//
 				for (int w = 0; w < num_of_features; w++) {
-				/* generate secret number between 1 and 10: */
-				randomNums.pop_back();
+					/* generate secret number between 1 and 10: */
+					randomNums.pop_back();
 				}
-			num_of_features--;
+				num_of_features--;
 				for (int x = 0; x < num_of_features; x++) {
-				/* generate secret number between 1 and 10: */
-				ranNum = rand() % 1000 + 1;
-				randomNums.push_back(ranNum/10);
+					/* generate secret number between 1 and 10: */
+					ranNum = rand() % 1000 + 1;
+					randomNums.push_back(ranNum/10);
 					//nummies
 					cout << "Using features(s) {" << output[imTired] << ", " << x << "} accuracy is " << randomNums[x] << endl;
 				}
-					//cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
-					imTired++;
-
-
+				//cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
+				imTired++;
+				//}
 			}
 		}
 	}
