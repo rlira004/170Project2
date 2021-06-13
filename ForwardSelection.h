@@ -57,7 +57,7 @@ public:
 					}
 				}
 					accuracy = temp;
-					output.push_back(pos);
+					output.push_back(position[pos]);
 					randomNums.erase(randomNums.begin()+pos);
 					position.erase(position.begin()+pos);
 					//for(int k = 0; k <= randomNums.size(); k++){
