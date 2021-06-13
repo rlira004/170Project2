@@ -49,7 +49,9 @@ public:
 		}
 		else{
 			for(int j = 0; j < randomNums.size(); j++){
-				cout << randomNums[j] << "LOOPS" << endl;
+				if(j = randomNums.size()-1){
+					j=0;
+				}
 			}
 		}
 	}
