@@ -34,12 +34,17 @@ public:
 			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
 			}
+			cout << i << ") " << randomNums[i] << endl;
 
 		}
-		cout << proceedSearching << endl;
-		while(!randomNums.empty()){
-		cout << proceedSearching << endl;
-		randomNums.pop_back();
+		if(proceedSearching = false){
+			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
+		}
+		else{
+			while(!randomNums.empty()){
+			cout << proceedSearching << endl;
+			randomNums.pop_back();
+			}
 		}
 
 	}
