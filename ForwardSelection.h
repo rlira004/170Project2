@@ -56,7 +56,7 @@ public:
 						pos = j;
 					}
 					for(int k = 0; k < randomNums.size(); k++){
-						cout << "* "<< randomNums[j] << endl;
+						cout << "* "<< randomNums[k] << endl;
 					}
 					randomNums.erase(randomNums.begin()+pos);
 				}
