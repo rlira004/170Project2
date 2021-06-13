@@ -54,6 +54,8 @@ public:
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
 						pos = j;
+					}
+					for(int j = 0; j < randomNums.size(); j++){
 						cout << "* "<< randomNums[j] << endl;
 					}
 					randomNums.erase(randomNums.begin()+pos);
