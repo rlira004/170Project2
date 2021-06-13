@@ -31,18 +31,14 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
-		}
-		for(int j = 0; j < num_of_features; j++){
-			cout << randomNums[j] << endl;
 			if(randomNums[j] > noFeatureReduced){
 				proceedSearching = true;
-				cout << proceedSearching << endl;
 			}
-			else
-				cout << "fuck" << endl;
+
 		}
+		cout << proceedSearching << endl;
 		while(!randomNums.empty()){
-		//cout << proceedSearching << endl;
+		cout << proceedSearching << endl;
 		randomNums.pop_back();
 		}
 
