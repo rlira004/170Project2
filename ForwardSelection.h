@@ -49,7 +49,7 @@ public:
 		}
 		else{
 			temp = 0;
-			//for(int x = 0; x <= randomNums.size(); x++){
+			while(!randomNums.empty()){
 				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
@@ -61,7 +61,7 @@ public:
 					for(int k = 0; k < randomNums.size(); k++){
 						cout << "* "<< randomNums[k] << endl;
 					}
-			//}
+			}
 		}
 	}
 };
