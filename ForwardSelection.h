@@ -25,6 +25,7 @@ public:
 		double noFeatureReduced = noFeatures/10;
 		double temp;
 		int pos = 0;
+		int imTired=0;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatureReduced << "%" << endl;
 		cout << "Beginning search." << endl << endl;
 		/* initialize random seed: */
@@ -49,15 +50,18 @@ public:
 		}
 		else{
 			temp = 0;
-			for(int j = 0; j < randomNums.size(); j++){
+			while(!randomNums.empty()){
+				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
 						pos = j;
 					}
-			}
+				}
 			randomNums.pop_back();
 			output.push_back(position[pos]);
-			cout << output[0] << " " << temp << endl;
+			cout << output[imTired] << " " << temp << endl;
+			imTired++;
+			}
 		}
 	}
 };
