@@ -56,6 +56,7 @@ public:
 						temp = randomNums[j];
 						pos = j;
 					}
+					cout << "for loop" << endl;
 				}
 			
 			output.push_back(position[pos]);
