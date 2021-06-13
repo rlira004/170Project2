@@ -60,7 +60,7 @@ public:
 					if(randomNums[j] > temp){
 					temp = randomNums[j];
 					accuracy = temp;
-					pos = j;
+					pos = j-1;
 					}
 					cout << "Acc " << temp << " Pos"<< j << endl;
 					randomNums.erase(randomNums.begin() + pos);
