@@ -30,12 +30,12 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
-			cout << randomNums.at(i) << endl;
-			cout << i << endl;
-			if(randomNums.at(i) > noFeatures){
-				proceedSearching = true;
-				cout << proceedSearching << endl;
-			}
+		}
+		for(i=0; i< num_of_features; i++){
+			if(noFeatures < randomNums[i])
+				cout << "bullshit" << endl;
+			else
+				cout << "fuck" << endl;
 		}
 		while(!randomNums.empty()){
 		//cout << proceedSearching << endl;
