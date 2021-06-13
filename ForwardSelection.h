@@ -61,11 +61,13 @@ public:
 					temp = randomNums[j];
 					accuracy = temp;
 					pos = j-1;
+					cout << "for loop" << endl;
 					}
 					cout << "Acc " << temp << " Pos"<< j << endl;
 					randomNums.erase(randomNums.begin() + pos);
 					position.erase(position.begin() + pos);
 				}
+				cout << "While Loop" << endl;
 			}
 		}
 
