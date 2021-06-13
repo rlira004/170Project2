@@ -69,9 +69,9 @@ public:
 				/* generate secret number between 1 and 10: */
 				ranNum = rand() % 1000 + 1;
 				randomNums.push_back(ranNum/10);
-					cout << "Nummies " << x << " " << randomNums[x] << endl;
+					cout << "Using features(s) (Nummies)" << x << " accuracy is " << randomNums[x] << endl;
 				}
-					cout << "Using feature(s) " << output[imTired] << " accuracy is " << temp << endl;
+					cout << "Feature set " << output[imTired] << " was best, accuracy is " << temp << endl;
 					imTired++;
 
 
