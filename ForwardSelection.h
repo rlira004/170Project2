@@ -54,12 +54,13 @@ public:
 					temp = randomNums[j];
 					pos = j;
 				}
-				accuracy = temp;
+				
+			}
+			accuracy = temp;
 				randomNums.erase(randomNums.begin()+pos);
 					for(int k = 0; k < randomNums.size(); k++){
 						cout << "?? " << randomNums[k] << endl;
 					}
-			}
 		}
 	}
 };
