@@ -56,7 +56,7 @@ public:
 				}
 				accuracy = temp;
 				randomNums.erase(randomNums.begin()+pos)
-					for(int k = 0; k < randomNums.size(); k++{
+					for(int k = 0; k < randomNums.size(); k++){
 						cout << "?? " << randomNums[k] << endl;
 					}
 			}
