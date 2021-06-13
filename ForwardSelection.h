@@ -30,7 +30,7 @@ public:
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
-			if(randomNums(i) > noFeatures)
+			if(randomNums[i] > noFeatures)
 				proceedSearching = true;
 		}
 		while(!randomNums.empty()){
