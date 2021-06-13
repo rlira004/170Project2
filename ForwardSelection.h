@@ -52,10 +52,11 @@ public:
 			for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
-						output.push_back(position[j]);
+						pos = j;
 					}
 			}
-			//randomNums.pop_back();
+			randomNums.pop_back();
+			output.push_back(position[pos]);
 			cout << output[0] << " " << temp << endl;
 		}
 	}
