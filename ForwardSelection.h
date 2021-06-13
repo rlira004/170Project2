@@ -26,7 +26,10 @@ public:
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 		}
-
+		while(!randomNums.empty()){
+		cout << "check" << endl;
+		randomNums.pop_back();
+		}
 
 	}
 };
