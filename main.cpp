@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
 	srand(time(NULL));
-	double accuracy = rand() % 1000 + 1;
 	int num_of_features;
 	int algo_select;
 
@@ -18,9 +17,6 @@ int main() {
 	cout << "	2) Backward Elimination" << endl;
 	cout << "	3) Special Nonexistant Algo" << endl;
 	cin >> algo_select;
-
-	cout << "Using no features and 'random' evaluation, I get an accuracy of " << accuracy/10 << "%" << endl;
-	cout << "Beginning search." << endl << endl;
 
 	ForwardSelection peanut;
 	peanut.get_feats(num_of_features);
