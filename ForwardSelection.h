@@ -53,7 +53,7 @@ public:
 				for(int j = 0; j < randomNums.size(); j++){
 					if(randomNums[j]>temp){
 						temp = randomNums[j];
-						pos = position[j];
+						pos = j;
 					}
 				}
 					//accuracy = temp;
