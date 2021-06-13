@@ -24,6 +24,7 @@ public:
 		double noFeatures = rand() % 1000 + 1;
 		double noFeatureReduced = noFeatures/10;
 		double temp;
+		int pos;
 		int loopZero;
 		int loopOne;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatureReduced << "%" << endl;
@@ -31,27 +32,42 @@ public:
 		/* initialize random seed: */
 		srand(time(NULL));
 		double ranNum;
+		
+		//This for loop loads up randomNums and position
 		for (int i = 0; i < num_of_features; i++) {
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 			position.push_back(i+1);
+			//checking to make sure NoFeatures isn't the best option
 			if(randomNums[i] > noFeatureReduced){
 				proceedSearching = true;
 			}
 			cout << position[i] << ") " << randomNums[i] << endl;
 
 		}
+		//if No Features = best, then crap out
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
+		//Do the search
 		else{
-			/*while(!randomNums.empty()){
-				for(int j = 0; j < num_of_features; j++){
-					
+			temp = randomNums[0];
+			//While loop does the comparisons and holds the values
+			while(!randomNums.empty()){
+				//for loop gets the values
+				for(int j = 1; j <= randomNums.size(); j++){
+					if(randomNums[j] > temp){
+					temp = randomNums[j];
+					acc = temp;
+					pos = j;
+					}
+					cout << "Accuracy is best with " << position[pos] << " " << randonNums[j] << endl;
+					randomNums.erase(randomNums[pos]);
+					output.push_back(position[pos]);
+					position.erase(position[pos]);
 				}
-				randomNums.pop_back();
-			}*/
+			}
 		}
 
 	}
