@@ -31,13 +31,14 @@ public:
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 			cout << randomNums.at(i) << endl;
+			cout << i << endl;
 			if(randomNums.at(i) > noFeatures){
 				proceedSearching = true;
 				cout << proceedSearching << endl;
 			}
 		}
 		while(!randomNums.empty()){
-		cout << proceedSearching << endl;
+		//cout << proceedSearching << endl;
 		randomNums.pop_back();
 		}
 
