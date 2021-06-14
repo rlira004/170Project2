@@ -47,8 +47,9 @@ public:
 		for (int y = 0; y < position.size(); y++){
 			if (position.size()){
 				cout << position[y];
+			}else{
+				cout << position[y] << ",";
 			}
-			cout << position[y] << ",";
 		}
 		cout << "} accuracy is " << accuracy << "%" << endl;
 					//checking to make sure allFeatures isn't the best option
