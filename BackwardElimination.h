@@ -45,7 +45,7 @@ public:
 		}
 		cout << "Using feature(s) {";
 		for (int y = 0; y < position.size(); y++){
-			if (position.size()){
+			if (y != position.size()){
 				cout << position[y] << " ";
 			}else{
 				cout << position[y] << ",";
