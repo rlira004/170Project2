@@ -26,6 +26,7 @@ public:
 		double temp;
 		int pos = 0;
 		int imTired=0;
+		double idec;
 		cout << "Using no features and 'random' evaluation, I get an accuracy of " << noFeatureReduced << "%" << endl;
 		cout << "Beginning search." << endl << endl;
 		/* initialize random seed: */
@@ -57,7 +58,10 @@ public:
 						pos = j;
 					}
 				}
-			
+					if(idec == temp && imTired>0){
+						cout << "Best was " << idec << "%" << endl;
+						break;
+					}
 				output.push_back(position[pos]);
 				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				
@@ -75,6 +79,7 @@ public:
 				}
 				//cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
 				imTired++;
+				idec = temp;
 				
 			}
 		}
