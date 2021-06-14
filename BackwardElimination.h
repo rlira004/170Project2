@@ -71,8 +71,12 @@ public:
 					}
 				//output.push_back(position[pos]);
 				cout << endl << "Feature set {";
-				for (int z; z < position.size(); z++){
-					cout << position[z];
+				for (int z = 0; z < position.size(); z++){
+					if (z == position.size){
+						cout << position[z];
+					}else{
+						cout position[z+1] << ",";
+					}
 				}
 				cout << "} was best, accuracy is " << temp << "%"<< endl << endl;
 				//position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
