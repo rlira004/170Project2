@@ -65,7 +65,7 @@ public:
 					}
 				//output.push_back(position[pos]);
 				cout << endl << "Feature set {" << position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
-				position.erase(position.begin()+pos+1);
+				position.erase(position.begin()+pos);//+1);
 
 				for (int w = 0; w < num_of_features; w++) {
 					/* generate secret number between 1 and 10: */
