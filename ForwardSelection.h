@@ -50,8 +50,8 @@ public:
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			temp = accuracy;
-			//temp = 0;
+			//temp = accuracy;
+			temp = 0;
 			while(num_of_features != 0){
 				for(int j = 0; j < num_of_features; j++){
 					if(randomNums[j]>temp){
@@ -60,7 +60,7 @@ public:
 					}
 				}
 			
-			output.push_back(position[pos]);
+				output.push_back(position[pos]);
 				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				//if(){//
 				for (int w = 0; w < num_of_features; w++) {
