@@ -20,7 +20,7 @@ public:
 	void get_feats(int num) {
 		num_of_features = num;
 	}
-	void BackwardElimination() {
+	void BackwardElimin() {
 		bool proceedSearching;
 		double allFeatures = rand() % 1000 + 1;
 		double allFeatureReduced = allFeatures/10;
