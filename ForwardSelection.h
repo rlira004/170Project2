@@ -64,7 +64,7 @@ public:
 						break;
 					}
 				//output.push_back(position[pos]);
-				cout << endl << "Feature set {" << position[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
+				cout << endl << "Feature set {" << position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				//position.erase(position.begin()+j);
 
 				for (int w = 0; w < num_of_features; w++) {
