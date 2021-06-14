@@ -75,7 +75,7 @@ public:
 					if (z == position.size()){
 						cout << position[z];
 					}else{
-						cout << position[z+1] << ",";
+						cout << position[z] << ",";
 					}
 				}
 				cout << "} was best, accuracy is " << temp << "%"<< endl << endl;
