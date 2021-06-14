@@ -25,7 +25,7 @@ int main() {
 	BackwardElimination elimination;
 	if(algo_select == 2){
 		elimination.get_feats(num_of_features);
-		elimination.BackwardElimination();
+		elimination.BackwardElimin();
 	}
 
 
