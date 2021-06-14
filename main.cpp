@@ -20,9 +20,12 @@ int main() {
 	cin >> algo_select;
 
 	ForwardSelection peanut;
-	peanut.get_feats(num_of_features);
-	peanut.ForwardSelect();
 	BackwardElimination elimination;
+	
+	if(algo_select == 1){
+		peanut.get_feats(num_of_features);
+		peanut.ForwardSelect();	
+	}
 	if(algo_select == 2){
 		elimination.get_feats(num_of_features);
 		elimination.BackwardElimin();
