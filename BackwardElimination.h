@@ -45,6 +45,9 @@ public:
 		}
 		cout << "Using feature(s) {";
 		for (int y = 0; y < position.size(); y++){
+			if (y == position.size()){
+				cout << position[y];
+			}
 			cout << position[y] << ",";
 		}
 		cout << "} accuracy is " << accuracy << "%" << endl;
