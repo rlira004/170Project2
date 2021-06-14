@@ -60,7 +60,7 @@ public:
 					}
 				}
 					if(idec == temp && imTired>0){
-						cout << endl << "Warning!! Decrease in accuracy. Best feature subset was {" << position[pos] << "} accuracy was " << idec << "%" << endl;
+						cout << endl << "Warning!! Decrease in accuracy. \nBest feature subset was {" << pos << "} accuracy was " << idec << "%" << endl;
 						break;
 					}
 				//output.push_back(position[pos]);
