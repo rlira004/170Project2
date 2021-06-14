@@ -34,27 +34,18 @@ public:
 		srand(time(NULL));
 		double ranNum;
 		//This for loop loads up randomNums and position
-		for (int i = 0; i < num_of_features; i++) { //added for loop
-			/* generate secret number between 1 and 10: */
-			ranNum = rand() % 1000 + 1;
-			randomNums.push_back(ranNum/10);
-			position.push_back(i+1);
-			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
-			//cout << position[i] << ") " << randomNums[i] << endl;
-		
 		for (int i = 0; i < num_of_features; i++) {
 			/* generate secret number between 1 and 10: */
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 			position.push_back(i+1);
-			//checking to make sure allFeatures isn't the best option
-			if(randomNums[i] > allFeatureReduced){
-				proceedSearching = true;
-			}
 			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
 			//cout << position[i] << ") " << randomNums[i] << endl;
 		}
-		}
+					//checking to make sure allFeatures isn't the best option
+			if(randomNums[i] > allFeatureReduced){
+				proceedSearching = true;
+			}
 		//if all Features = best, then crap out
 		if(proceedSearching == false){
 			cout << "Accuracy is best with all features @ " << allFeatureReduced << "%" << endl;
