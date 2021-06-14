@@ -29,7 +29,7 @@ public:
 		int imTired=0;
 		double idec;
 		cout << "Using all features and 'random' evaluation, I get an accuracy of " << allFeatureReduced << "%" << endl;
-		cout << "Beginning search." << endl << endl;
+		cout << "Beginning Elimination:" << endl << endl;
 		/* initialize random seed: */
 		srand(time(NULL));
 		double ranNum;
@@ -45,7 +45,7 @@ public:
 		}
 		cout << "Using feature(s) {";
 		for (int y = 0; y < position.size(); y++){
-			if (y == position.size()){
+			if (yposition.size()){
 				cout << position[y];
 			}
 			cout << position[y] << ",";
