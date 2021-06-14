@@ -24,8 +24,9 @@ int main() {
 	peanut.ForwardSelect();
 	
 	if(algo_select == 2){
-		peanut.get_feats(num_of_features);
-		peanut.BackwardElimination();
+		BackwardElimination elimination;
+		elimination.get_feats(num_of_features);
+		elimination.BackwardElimination();
 	}
 
 
