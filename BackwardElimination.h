@@ -45,7 +45,7 @@ public:
 		}
 		cout << "Using feature(s) {";
 		for (int y = 0; y < position.size(); y++){
-			cout << position[y] ",";
+			cout << position[y] << ",";
 		}
 		cout << "} accuracy is " << accuracy << "%" << endl;
 					//checking to make sure allFeatures isn't the best option
