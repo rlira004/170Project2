@@ -14,6 +14,7 @@ private:
 	vector<double> position;
 	vector<double> output;
 	vector<double> randomNums;
+	vector<int> list;
 	double accuracy;
 public:
 	void get_feats(int num) {
@@ -63,6 +64,7 @@ public:
 						break;
 					}
 				output.push_back(position[pos]);
+				position.erase(position.begin()+j);
 				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				
 				for (int w = 0; w < num_of_features; w++) {
