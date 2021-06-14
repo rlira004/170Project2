@@ -63,10 +63,10 @@ public:
 						cout << "Best was " << idec << "%" << endl;
 						break;
 					}
-				output.push_back(position[pos]);
-				position.erase(position.begin()+j);
-				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
-				
+				//output.push_back(position[pos]);
+				cout << endl << "Feature set {" << position[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
+				//position.erase(position.begin()+j);
+
 				for (int w = 0; w < num_of_features; w++) {
 					/* generate secret number between 1 and 10: */
 					randomNums.pop_back();
