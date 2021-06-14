@@ -45,11 +45,7 @@ public:
 		}
 		cout << "Using feature(s) {";
 		for (int y = 0; y < position.size(); y++){
-			if (y != position.size()){
-				cout << position[y] << " ";
-			}else{
-				cout << position[y] << ",";
-			}
+			cout << position[y];
 		}
 		cout << "} accuracy is " << accuracy << "%" << endl;
 					//checking to make sure allFeatures isn't the best option
@@ -74,7 +70,12 @@ public:
 						break;
 					}
 				//output.push_back(position[pos]);
-				cout << endl << "Feature set {" << position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
+				cout << endl << "Feature set {";
+				for (int z; z < position.size(); z++){
+					cout << position[i];
+				}
+				cout << "} was best, accuracy is " << temp << "%"<< endl << endl;
+				//position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
 				position.erase(position.begin()+pos);//+1); fixes segmentation fault
 
 				for (int w = 0; w < num_of_features; w++) {
