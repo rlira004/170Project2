@@ -43,14 +43,12 @@ public:
 			}
 			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
 			//cout << position[i] << ") " << randomNums[i] << endl;
-			accuracy = randomNums[i];//testing
 		}
 		//if No Features = best, then crap out
 		if(proceedSearching == false){
 			cout << "Accuracy is best with no features @ " << noFeatureReduced << "%" << endl;
 		}
 		else{
-			//temp = accuracy;
 			temp = 0;
 			while(num_of_features != 0){
 				for(int j = 0; j < num_of_features; j++){
@@ -62,7 +60,7 @@ public:
 			
 				output.push_back(position[pos]);
 				cout << endl << "Feature set {" << output[imTired] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
-				//if(){//
+				
 				for (int w = 0; w < num_of_features; w++) {
 					/* generate secret number between 1 and 10: */
 					randomNums.pop_back();
@@ -77,7 +75,7 @@ public:
 				}
 				//cout << endl << "Feature set " << output[imTired] << " was best, accuracy is " << temp << "%"<< endl << endl;
 				imTired++;
-				//}
+				
 			}
 		}
 	}
