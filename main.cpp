@@ -1,5 +1,6 @@
 #include <iostream>
 #include "ForwardSelection.h"
+#include "BackwardElimination.h"
 using namespace std;
 
 
@@ -22,6 +23,10 @@ int main() {
 	peanut.get_feats(num_of_features);
 	peanut.ForwardSelect();
 	
+	if(algo_select == 2){
+		peanut.getfeats(num_of_features);
+		peanut.BackwardElimination();
+	}
 
 
 
