@@ -39,10 +39,6 @@ public:
 			ranNum = rand() % 1000 + 1;
 			randomNums.push_back(ranNum/10);
 			position.push_back(i+1);
-			//checking to make sure allFeatures isn't the best option
-			if(randomNums[i] > allFeatureReduced){
-				proceedSearching = true;
-			}
 			cout << "Using feature(s) {" << position[i] << "} accuracy is " << randomNums[i] << "%" << endl;
 			//cout << position[i] << ") " << randomNums[i] << endl;
 		
