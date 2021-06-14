@@ -72,7 +72,7 @@ public:
 				//output.push_back(position[pos]);
 				cout << endl << "Feature set {";
 				for (int z = 0; z < position.size(); z++){
-					if (z == position.size){
+					if (z == position.size()){
 						cout << position[z];
 					}else{
 						cout position[z+1] << ",";
