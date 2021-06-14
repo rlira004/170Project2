@@ -60,12 +60,12 @@ public:
 					}
 				}
 					if(idec == temp && imTired>0){
-						cout << "Best was " << idec << "%" << endl;
+						cout << endl << "Warning!! Decrease in accuracy. Best feature subset was {" << position[pos] << "} accuracy was " << idec << "%" << endl;
 						break;
 					}
 				//output.push_back(position[pos]);
 				cout << endl << "Feature set {" << position[pos] << "} was best, accuracy is " << temp << "%"<< endl << endl; //testing
-				position.erase(position.begin()+pos);//+1);
+				position.erase(position.begin()+pos);//+1); fixes segmentation fault
 
 				for (int w = 0; w < num_of_features; w++) {
 					/* generate secret number between 1 and 10: */
